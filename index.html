@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL-Shortener</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" href="gmu.png" type="image/png">
+    <link href="blocks.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />  
+</head>
+<body>
+    <h1 class="head block fixed">Give-me-URLs</h1>
+    <div class="main-div block fixed">
+        <input class="long-url block fixed" id="long_url" placeholder="your long URL">
+        <button class="submit-button block" onclick="submit()">short it</button>
+        <input class="short-url block fixed" id="short_url" placeholder="short URL loading..." value="">
+        <button class="copy-button block" onclick="copy()">copy link</button>
+    </div>
+    <div class="gmf">
+    <button class="gmf-btn block" onclick="gmf()">Give-me-files</button>
+    </div>
+    <p class="footer">&copy; Copyright 2021 Give-me-URLs</p>
+<script src="script.js"></script>
+</body>
+</html>
