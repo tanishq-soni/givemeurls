@@ -1,3 +1,4 @@
+document.getElementById("qr_div").style.display ="none";
 function gmf(){
   window.location.href="https://givemefiles.now.sh";
 }
@@ -31,3 +32,8 @@ function copy() {
     copyText.setSelectionRange(0, 99999);
     document.execCommand("copy");
   } 
+function qr(){
+    document.getElementById("qr_div").style.display ="block";
+    var qrlink = document.getElementById("short_url").value;
+    window.frames['qrframe'].location.replace(qrlink+".QR");
+}  

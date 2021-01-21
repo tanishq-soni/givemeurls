@@ -17,10 +17,14 @@
         <button class="submit-button block" onclick="submit()">short it</button>
         <input class="short-url block fixed" id="short_url" placeholder="short URL loading..." value="">
         <button class="copy-button block" onclick="copy()">copy link</button>
+        <button class="qr-btn block" onclick="qr()">Generate QR</button>
+        <div class="qrdiv" id="qr_div">
+        <center><iframe name="qrframe" style="height: 130px; width: 130px;"></iframe></center>
+        </div>
     </div>
-    <div class="gmf">
+    <!-- <div class="gmf">
     <button class="gmf-btn block" onclick="gmf()">Give-me-files</button>
-    </div>
+    </div> -->
     <p class="footer">&copy; Copyright 2021 Give-me-URLs</p>
 <script src="script.js"></script>
 </body>
