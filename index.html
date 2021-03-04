@@ -13,11 +13,13 @@
 <body>
     <h1 class="head block fixed">Give-me-URLs</h1>
     <div class="main-div block fixed">
-        <input class="long-url block fixed" id="long_url" placeholder="your long URL">
+        <input class="long-url block fixed" id="long_url" placeholder="http://longggggg-url.com">
         <button class="submit-button block" onclick="submit()">short it</button>
+        <div class="second_div" id="second_div">
         <input class="short-url block fixed" id="short_url" placeholder="short URL loading..." value="">
         <button class="copy-button block" onclick="copy()">copy link</button>
         <button class="qr-btn block" onclick="qr()">Generate QR</button>
+        </div>
         <div class="qrdiv" id="qr_div">
         <center><iframe name="qrframe" style="height: 130px; width: 130px; border: none;"></iframe></center>
         </div>

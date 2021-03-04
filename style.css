@@ -19,6 +19,8 @@
   }
   .main-div{
     --block-background-color: rgb(245, 252, 150);
+    min-width: 247px;
+    max-width: 247px;
   }
   
   .submit-button, .copy-button, .qr-btn{
@@ -26,7 +28,11 @@
   margin-right: auto;
   --block-background-color: rgb(175, 243, 255);
   }
-  
+  .copy-button, .qr-btn{
+    display: inline;
+    left: auto;
+    width: 110px;
+  }
   .long-url, .short-url{
   margin-left: auto;
   margin-right: auto;

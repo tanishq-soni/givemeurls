@@ -1,9 +1,12 @@
-document.getElementById("qr_div").style.display ="none";
-function gmf(){
-  window.location.href="https://givemefiles.now.sh";
-}
+document.getElementById("qr_div").style.display="none";
+document.getElementById("second_div").style.display="none";
 function submit(){
-    var longurl = document.getElementById("long_url").value;
+  var longurl = document.getElementById("long_url").value;
+  if(longurl=='')
+  {
+    alert('please enter a valid url');
+  }
+  else{
     let linkRequest = {
       destination: longurl,
       domain: { fullName: "fragile.rocks" }
@@ -25,6 +28,8 @@ function submit(){
         document.getElementById("short_url").value="https://"+link.shortUrl;
       }
   })
+  document.getElementById("second_div").style.display="block";
+}
 }
 function copy() {
     var copyText = document.getElementById("short_url");
